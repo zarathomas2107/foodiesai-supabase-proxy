@@ -16,10 +16,6 @@
       "dest": "/index.html"
     },
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
       "src": "/auth/v1/(.*)",
       "dest": "/api/auth/$1"
     },
