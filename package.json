@@ -1,0 +1,20 @@
+{
+  "name": "foodiesai-supabase-proxy",
+  "version": "1.0.0",
+  "description": "Vercel proxy for Supabase authentication",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step needed'",
+    "start": "echo 'Deployed to Vercel'"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  },
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  },
+  "keywords": ["supabase", "auth", "proxy", "vercel"],
+  "author": "Your Name",
+  "license": "MIT"
+}

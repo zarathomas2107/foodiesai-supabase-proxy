@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "name": "foodiesai-supabase-proxy",
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/auth/v1/(.*)",
+      "dest": "/api/auth/$1"
+    },
+    {
+      "src": "/rest/v1/(.*)",
+      "dest": "/api/rest/$1"
+    },
+    {
+      "src": "/storage/v1/(.*)",
+      "dest": "/api/storage/$1"
+    },
+    {
+      "src": "/realtime/v1/(.*)",
+      "dest": "/api/realtime/$1"
+    },
+    {
+      "src": "/functions/v1/(.*)",
+      "dest": "/api/functions/$1"
+    }
+  ],
+  "env": {
+    "SUPABASE_URL": "@supabase-url",
+    "SUPABASE_ANON_KEY": "@supabase-anon-key",
+    "SUPABASE_SERVICE_ROLE_KEY": "@supabase-service-role-key"
+  }
+}
