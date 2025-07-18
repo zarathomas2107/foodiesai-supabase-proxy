@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "foodiesai-supabase-proxy",
   "builds": [
     {
       "src": "api/**/*.js",
@@ -28,10 +27,5 @@
       "src": "/functions/v1/(.*)",
       "dest": "/api/functions/$1"
     }
-  ],
-  "env": {
-    "SUPABASE_URL": "@supabase-url",
-    "SUPABASE_ANON_KEY": "@supabase-anon-key",
-    "SUPABASE_SERVICE_ROLE_KEY": "@supabase-service-role-key"
-  }
+  ]
 }
